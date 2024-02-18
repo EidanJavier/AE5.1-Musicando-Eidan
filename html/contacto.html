@@ -1,0 +1,92 @@
+<!-- Eidan Javier Yumar Sanchez 1ºASIRB -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/favicon-96x96.png" type="image/x-icon">
+    <title>Contactanos</title>
+</head>
+<body>
+    <div id="cabecera">
+        <h1>La web de las artes</h1>
+        <h2>Seccion:Contactanos</h2>
+        <ul>
+            <li><a href="../index.html">inicio</a></li>
+            <li><a href="musica.html">Musica</a></li>
+            <li><a href="cine.html">Cine</a></li>
+            <li><a href="generosLiterarios.html">Generos literarios</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="contacto.html">contactanos</a></li>
+        </ul>
+        <hr>
+    </div>
+    <div id="cuerpo">
+        <form name="formularioDeContacto" action="/send.php" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" autocomplete="on" placeholder="Introduce tu nombre..." required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos</label>
+                    <input id="apellidos" name="apellidos" type="text" required autocomplete="off" placeholder="Introduce tu apellido...">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required autocomplete="on" placeholder="usuario@email.com">
+                </div>
+                <div>
+                    <label for="Nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="Nacimiento" id="Nacimiento" autocomplete="off">
+                </div>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="Edad" id="Edad" autocomplete="off" minlength="1" maxlength="3" min="1" max="100" pattern="[0-9]" title="Edad entre: 1-100">
+                </div>
+                <div>
+                    <label for="sexo">Sexo</label>
+                    <input type="radio" name="sexo" id="Hombre" value="H" checked>
+                    <label for="Hombre">Hombre</label>
+                    <input type="radio" name="sexo" id="Mujer" value="M">
+                    <label for="Mujer">Mujer</label>
+                </div>
+                <div>
+                    <label for="Pais">Pais:</label>
+                    <select name="Pais" id="Pais" required>
+                        <option value="" selected="selected">- Selecciona -</option>
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Italia">Italia</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <div>
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea name="Mensaje" id="Mensaje" cols="30" rows="10" placeholder="Introduce tu mensaje" spellcheck="true"></textarea>
+                </div>
+                <div>
+                    <label for="foto">Adjunta una foto...</label>
+                    <input type="file" name="foto" id="foto" accept=".jpg,.png">
+                </div>
+            </fieldset>
+            <div>
+                <input type="checkbox" name="Condiciones" id="Condiciones" checked required/> He leido las condiciones...
+            </div>
+            <div>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        <h2>Centro de referencia</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7792920263323!2d-16.28582042382684!3d28.45606889207102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1708211071754!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <hr>
+    </div>
+    <div id="pie de pagina">
+        <a href="#cabecera">Inicio</a>
+    </div>
+</body>
+</html>
